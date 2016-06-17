@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+  xmlns:gap   = "http://phonegap.com/ns/1.0"
+  id          = "com.itconcept.sije"
+  versionCode = "1" 
+  version     = "1.0.0" >
+
+  <name>Sije</name>
+  <author href="http://itconcept.sg" email="hoiyen@itconcept.sg">
+    Hoiyen
+  </author>
+
+  <!-- PLUGINS -->
+  <plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+  <plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
+  <plugin name="com.ionic.keyboard" spec="1.0.3" source="pgb" />
+  <plugin name="com.sharinglabs.cordova.plugin.cache" spec="1.0.0" source="pgb" />
+
+  <!--
+  <access origin="cafeasia.itc2.clientsdemo.net" />
+  <allow-navigation href="cafeasia.itc2.clientsdemo.net" />
+  <access origin="youtube.com" />
+  <access origin="cafeasia.itc2.clientsdemo.net" />
+  -->
+
+  <allow-navigation href="http://sije.itc2.clientsdemo.net/" />
+  <access origin="*" />
+
+
+  <icon src="icon.png" />
+  <splash src="splash.jpg" />
+  <preference name="SplashScreen" value="splash.png" />
+  <preference name="orientation" value="portrait" />
+
+  <platform name="android">
+    <preference name="orientation" value="portrait" />
+    <icon src="img/hdpi.png" platform="android" qualifier="hdpi" />
+    <!--
+    <icon src="img/ldpi.png" platform="android" qualifier="ldpi" />
+    <icon src="img/mdpi.png" platform="android" qualifier="mdpi" />
+    
+    <icon src="img/xhdpi.png" platform="android" qualifier="xhdpi" />
+    <icon src="img/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+    <icon src="img/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+    -->
+  </platform>
+
+</widget>
